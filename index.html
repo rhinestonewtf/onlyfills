@@ -9,30 +9,45 @@
       body {
         margin: 0;
         padding: 0;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         font-family: Arial, sans-serif;
         text-align: center;
       }
-
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       .title {
         font-size: 1.5rem;
         font-style: italic;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.2rem;
       }
-
       .definition {
         font-size: 1rem;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+      .footer {
+        padding: 1rem;
+        font-size: 0.9rem;
         color: #666;
       }
     </style>
   </head>
   <body>
-    <div>
+    <div class="content">
       <p class="title">OnlyFills</p>
       <p class="definition">the next generation intents infrastructure</p>
+    </div>
+    <div class="footer">
+      <p>69 intents processed and counting...</p>
     </div>
   </body>
 </html>
